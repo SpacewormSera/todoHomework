@@ -1,7 +1,9 @@
-import { Button, TextField } from '@material-ui/core';
+import { TextField } from '@material-ui/core';
 import React, { useState } from 'react';
+// eslint-disable-next-line no-unused-vars
 import ReactDOM from 'react-dom';
 import { v4 as uuidv4 } from 'uuid';
+import RandomCatApi from '../RandomCatApi';
 
 function TodoForm({ addTodo }) {
   const [todo, setTodo] = useState({
@@ -35,6 +37,7 @@ function TodoForm({ addTodo }) {
         value={todo.task}
         onChange={handleTaskInputChange} />
       <button type="submit">Add ToDo</button>
+      <RandomCatApi />
     </form>
   )
 }

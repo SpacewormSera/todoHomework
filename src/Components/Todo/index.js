@@ -1,6 +1,7 @@
-import { Checkbox, IconButton, ListItem, Typography } from '@material-ui/core';
+import { Checkbox, ListItem, Typography } from '@material-ui/core';
 // import CloseIcon from 'material-ui/icons/Close';
 import React from 'react';
+// eslint-disable-next-line no-unused-vars
 import ReactDOM from 'react-dom';
 
 function Todo({ todo, toggleComplete, removeTodo }) {
