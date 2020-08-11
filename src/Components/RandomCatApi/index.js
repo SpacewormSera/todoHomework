@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 // eslint-disable-next-line no-unused-vars
 import reactDOM from 'react-dom';
+import '../../App.css'
 
 function RandomCat() {
   const [catUrl, setCatUrl] = useState([]);
@@ -20,7 +21,7 @@ function RandomCat() {
   return (
     <>
       <button type="submit" onClick={getUrl}>getcat</button>
-      {/* <img>{catUrl[0]}</img> */}
+      <img alt="cat" className="cat" src={catUrl ? catUrl[0] : ''} />
 
       {/* <div>{catUrl.map((element)=>{<img>{element}</img>})}</div> */}
     </>

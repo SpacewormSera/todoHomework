@@ -19,6 +19,10 @@ html,
   align-items: center;
 }
 
+.cat{
+  width: 200px;  
+}
+
 li{
   text-align: initial;
 }
